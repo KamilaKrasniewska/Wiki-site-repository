@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 70px);
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+.signin-section, .signup-section {
+    flex: 1 1 300px; /* flex-grow | flex-shrink | flex-basis */
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 10px; /* Add some horizontal margin */
+    min-width: 300px; /* Minimum width */
+    max-width: 400px; /* Maximum width */
+}
+
+
+.signin-section h2, .signup-section h2 {
+    text-align: center;
+}
+.signup-section h3, .signup-section h2 {
+    text-align: center;
+}
+
+.signin-section form, .signup-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-section label, .signup-section label {
+    margin-top: 10px;
+}
+
+.signin-section input[type="text"],
+.signin-section input[type="email"],
+.signin-section input[type="password"],
+.signup-section input[type="text"],
+.signup-section input[type="email"],
+.signup-section input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.signin-section input[type="submit"],
+.signup-section input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0645ad;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.signin-section input[type="submit"]:hover,
+.signup-section input[type="submit"]:hover {
+    background-color: #005cbf;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #a7d7f9;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0645ad;
+}

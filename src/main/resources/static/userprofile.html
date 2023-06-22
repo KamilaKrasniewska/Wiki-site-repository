@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wisdom.com - User Profile</title>
+  <link rel="stylesheet" href="userprofile.css">
+</head>
+<body>
+<header>
+  <h1>Welcome to Wisdom.com</h1>
+  <nav>
+    <ul>
+      <li><a href="HomePage.html">Home</a></li>
+
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="profile-section">
+    <h2>Your Profile</h2>
+    <div class="user-info">
+      <img src="path_to_image.jpg" alt="User's profile picture">
+      <p class="username">Username: <span id="username">username</span></p>
+      <!--p class="email">E-mail address: <span id="email">e-mail</span></p>--><!--
+      <p class="points">Points: <span id="points">points</span></p>-->
+    </div>
+    <div class="user-articles">
+      <h3>Articles:</h3>
+      <ul id="user-articles-list">
+        <!-- List of articles would be populated here -->
+      </ul>
+    </div>
+    <button id="settings-button">Change Profile Settings</button>
+    <a href="/createArticle">Create Article</a>
+  </section>
+</main>
+<footer>
+  <p>© 2023 UEP</p>
+</footer>
+<script src="userprofile.js"></script>
+</body>
+</html>
